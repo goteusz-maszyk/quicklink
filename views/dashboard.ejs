@@ -26,7 +26,7 @@
         <dl>
           <% for (const lnk of links) { %>
             <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-8 sm:gap-4 sm:px-6">
-              <a href="/delete/<%= lnk.short_id %>" class="text-sm font-medium text-red-600">
+              <a href="/admin/delete/<%= lnk.short_id %>" class="text-sm font-medium text-red-600">
                 <i class="fas fa-trash"></i>
               </a>
               <dt class="text-sm font-medium text-gray-500 sm:col-span-2">
@@ -46,7 +46,7 @@
         <h3 class="text-lg leading-6 font-medium text-gray-900 mb-6">
           Add New URL
         </h3>
-        <form action="/createlink" method="post">
+        <form action="/admin/createlink" method="post">
           <div class="w-full px-3 mb-6 md:mb-0">
             <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="name">
                 Name
