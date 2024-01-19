@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "register": "node bin/register.js",
-    "unregister": "node bin/unregister.js",
+    "register": "node exec/register.js",
+    "unregister": "node exec/unregister.js",
     "start": "node ."
   },
   "keywords": [],
