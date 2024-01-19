@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+npm install
+echo DATABASE_URL="file:./dev.db" > .env
+npx prisma db push
