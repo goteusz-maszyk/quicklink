@@ -44,7 +44,11 @@ app.get('/admin/dashboard', async (req, res) => {
 });
 
 app.post('/admin/createlink', async (req, res) => {
-  if (!req.body.name)
+  if (!req.body.name || !req.body.shortLinkName || !req.body.url) {
+    res.redirect("/admin/dashboard")
+    res.end()
+    return
+  }
   await prisma.link.create({
     data: {
       name: req.body.name,
